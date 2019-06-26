@@ -1,4 +1,4 @@
-#include "Images.h"
+#include "/home/archer/Projects/ArcherStandardLibrary/Source/all.h"
 using namespace std;
 
 #define math_e 2.71828;
@@ -60,13 +60,16 @@ struct Network{
 
 int main(int argc, char* argv[]){
     cout << "begin\n";
-
+/*
     Network net({3,2,4,4,1});
     cout << "1";
     Image img = net.display();
     cout << "2";
     img.savePPM("test.ppm");
-
+*/
+    Image img(400,400);
+    img.text("Yeet",100,100);
+    img.savePPM("test.ppm");
     cout << "done\n";
     return 0;
 }
